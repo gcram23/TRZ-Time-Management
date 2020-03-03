@@ -62,6 +62,11 @@ view: employee_summary2 {
     sql: ${TABLE}."TYPE" ;;
   }
 
+  dimension: drill_count1 {
+    type: string
+    drill_fields: [project_number, project_name]
+  }
+
   measure: count {
     type: count
     drill_fields: [employee_name, project_name]
