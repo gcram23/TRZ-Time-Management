@@ -64,7 +64,7 @@ view: employee_summary2 {
 
   dimension: Project_Name {
     sql: ${TABLE}."Project Name" ;;
-    drill_fields: [employee_type]
+    drill_fields: [employee_name,employee_type]
   }
 
   measure: count {
