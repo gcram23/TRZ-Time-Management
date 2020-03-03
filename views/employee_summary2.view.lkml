@@ -62,9 +62,9 @@ view: employee_summary2 {
     sql: ${TABLE}."TYPE" ;;
   }
 
-  dimension: drill_count1 {
-    type: string
-    drill_fields: [project_number, project_name]
+  dimension: country {
+    sql: ${TABLE}."Project Name" ;;
+    drill_fields: [employee_type]
   }
 
   measure: count {
