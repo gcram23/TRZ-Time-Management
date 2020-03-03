@@ -76,4 +76,9 @@ view: employee_summary2 {
     type: count_distinct
     sql: ${TABLE}."Employee Number" ;;
   }
+
+  measure: drill_count {
+    type: count
+    drill_fields: [employee_name, project_name]
+  }
 }
