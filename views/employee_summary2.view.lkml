@@ -62,7 +62,7 @@ view: employee_summary2 {
     sql: ${TABLE}."TYPE" ;;
   }
 
-  dimension: country {
+  dimension: Project_Name {
     sql: ${TABLE}."Project Name" ;;
     drill_fields: [employee_type]
   }
